@@ -23,18 +23,6 @@ class Usuario(Base):
     email = Column(String(250), nullable=False)
     password = Column(Integer, nullable=False)
     subscription_date = Column(Integer, nullable=False)
-    
-    # planetas = relationship('Planetas', backref='usuario', lazy=True)
-    # Personajes = relationship('Personajes', backref='usuario', lazy=True)
-    # favorites = relationship(
-    #      'Usuario',
-    #      secondary=Favorite,
-    #      primaryjoin=(Favorite.c.planets_id == id),
-    #      secondaryjoin=(Favorite.c.people_id == id),
-    #      backref='favor',
-    #      lazy=True
-
-    # )
 
 
 class Planetas(Base):
